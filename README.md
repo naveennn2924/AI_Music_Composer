@@ -11,7 +11,7 @@
 
 <br/>
 
-![SynthWave AI Screenshot](https://via.placeholder.com/900x500/050510/00f5ff?text=SynthWave+AI+Screenshot)
+![SynthWave AI Screenshot]((https://github.com/naveennn2924/AI_Music_Composer/blob/master/synthwave.png))
 
 > *Replace the placeholder above with a real screenshot or GIF of your app*
 
@@ -560,3 +560,4 @@ MIT License — free to use, modify, and distribute with attribution.
 <div align="center">
 
 **Built with ❤️ by Naveen Narasimhappa**
+
