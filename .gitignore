@@ -1,0 +1,4 @@
+.env
+venv/
+Music_Composer.egg-info/
+gcp_key.json

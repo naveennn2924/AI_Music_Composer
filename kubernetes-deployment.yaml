@@ -1,0 +1,43 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: synthwave-app
+  labels:
+    app: synthwave-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: synthwave-app
+  template:
+    metadata:
+      labels:
+        app: synthwave-app
+    spec:
+      containers:
+      - name: synthwave-container
+        image: us-central1-docker.pkg.dev/nani-youtube-uploader/synthwave/synthwave  
+        imagePullPolicy: Always
+        ports:
+          - containerPort: 8501
+        env:
+        - name: GROQ_API_KEY
+          valueFrom:
+            secretKeyRef:
+              name: llmops-secrets
+              key: GROQ_API_KEY
+
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: synthwave-service
+spec:
+  type: LoadBalancer
+  selector:
+    app: synthwave-app
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8501
