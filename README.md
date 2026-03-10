@@ -23,11 +23,9 @@
 
 - [What It Does](#-what-it-does)
 - [Demo](#-demo)
-- [Architecture](#-architecture)
 - [Tech Stack](#-tech-stack)
 - [Project Structure](#-project-structure)
 - [Quick Start](#-quick-start)
-- [Environment Variables](#-environment-variables)
 - [How It Works](#-how-it-works)
 - [Instruments & Synthesis](#-instruments--synthesis)
 - [Music Theory Engine](#-music-theory-engine)
@@ -35,8 +33,6 @@
 - [Docker](#-docker)
 - [CI/CD Pipeline](#-cicd-pipeline-gitlab)
 - [GCP Deployment](#-gcp-deployment-gke)
-- [API Reference](#-api-reference)
-- [Contributing](#-contributing)
 - [License](#-license)
 
 ---
@@ -560,5 +556,6 @@ MIT License — free to use, modify, and distribute with attribution.
 <div align="center">
 
 **Built with ❤️ by Naveen Narasimhappa**
+
 
 
